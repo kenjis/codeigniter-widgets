@@ -42,12 +42,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/newmythmedia/bay.git",
-                "reference": "834de948d7590645d57c6d483c575ec4662b02db"
+                "reference": "109ba3ebe2c79bda3a722a6011ada4fcae2f0dc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/newmythmedia/bay/zipball/834de948d7590645d57c6d483c575ec4662b02db",
-                "reference": "834de948d7590645d57c6d483c575ec4662b02db",
+                "url": "https://api.github.com/repos/newmythmedia/bay/zipball/109ba3ebe2c79bda3a722a6011ada4fcae2f0dc4",
+                "reference": "109ba3ebe2c79bda3a722a6011ada4fcae2f0dc4",
                 "shasum": ""
             },
             "type": "library",
@@ -73,7 +73,7 @@
                 "component",
                 "view"
             ],
-            "time": "2015-06-01 14:04:36"
+            "time": "2016-01-14 03:40:18"
         }
     ],
     "packages-dev": [
