@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57bf91d9f43ee75914d1edbc250e242d",
-    "content-hash": "f88ee2eea796febc762153a752218b86",
+    "hash": "0338155d634b476c7ac8960c871859d5",
+    "content-hash": "572ffc840391cc90bf25c41624d7f9cc",
     "packages": [
         {
             "name": "codeigniter/framework",
@@ -35,6 +35,45 @@
             "description": "The CodeIgniter framework",
             "homepage": "https://codeigniter.com",
             "time": "2016-01-13 00:09:27"
+        },
+        {
+            "name": "myth/bay",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/newmythmedia/bay.git",
+                "reference": "834de948d7590645d57c6d483c575ec4662b02db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/newmythmedia/bay/zipball/834de948d7590645d57c6d483c575ec4662b02db",
+                "reference": "834de948d7590645d57c6d483c575ec4662b02db",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Myth\\Bay\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lonnie Ezell",
+                    "homepage": "http://newmythmedia.com"
+                }
+            ],
+            "description": "Provides a simple mechanism for inserting view partials rendered in other classes. Can be used to provide a 'widgets' implementation or similar.",
+            "homepage": "https://github.com/newmythmedia/bay",
+            "keywords": [
+                "Cell",
+                "component",
+                "view"
+            ],
+            "time": "2015-06-01 14:04:36"
         }
     ],
     "packages-dev": [
@@ -71,7 +110,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "myth/bay": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
