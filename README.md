@@ -7,11 +7,11 @@ This is CodeIgniter 3 with [myth:Bay](https://github.com/newmythmedia/bay) which
 
 * Controller
   * [controllers/Sample.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/controllers/Sample.php)
-  * [views/sample/index.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/views/sample/index.php)
+    * [views/sample/index.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/views/sample/index.php)
 
 * Widget
   * [libraries/Blog_widget.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/libraries/Blog_widget.php)
-  * [views/blog/list_latest.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/views/blog/list_latest.php)
+    * [views/blog/list_latest.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/views/blog/list_latest.php)
 
 ## Requirements
 
