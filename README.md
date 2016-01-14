@@ -1,4 +1,4 @@
-# CodeIgniter Widget Sample
+# CodeIgniter Widget (View Partial) Sample
 
 This is CodeIgniter 3 with [myth:Bay](https://github.com/newmythmedia/bay) which is a simple, framework-agnostic widget system.
 
