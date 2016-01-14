@@ -1,26 +1,17 @@
-# CodeIgniter Composer Installer
+# CodeIgniter Widget Sample
 
-[![Latest Stable Version](https://poser.pugx.org/kenjis/codeigniter-composer-installer/v/stable)](https://packagist.org/packages/kenjis/codeigniter-composer-installer) [![Total Downloads](https://poser.pugx.org/kenjis/codeigniter-composer-installer/downloads)](https://packagist.org/packages/kenjis/codeigniter-composer-installer) [![Latest Unstable Version](https://poser.pugx.org/kenjis/codeigniter-composer-installer/v/unstable)](https://packagist.org/packages/kenjis/codeigniter-composer-installer) [![License](https://poser.pugx.org/kenjis/codeigniter-composer-installer/license)](https://packagist.org/packages/kenjis/codeigniter-composer-installer)
+This is CodeIgniter 3 with [myth:Bay](https://github.com/newmythmedia/bay) which is a simple, framework-agnostic widget system.
 
-This package installs the offical [CodeIgniter](https://github.com/bcit-ci/CodeIgniter) (version `3.0.*`) with secure folder structure via Composer.
+* Widget Helper
+  * [helpers/widget_helper.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/helpers/widget_helper.php)
 
-You can update CodeIgniter system folder to latest version with one command.
+* Controller
+  * [controllers/Sample.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/controllers/Sample.php)
+  * [views/sample/index.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/views/sample/index.php)
 
-## Folder Structure
-
-```
-codeigniter/
-├── application/
-├── composer.json
-├── composer.lock
-├── public/
-│   ├── .htaccess
-│   └── index.php
-└── vendor/
-    └── codeigniter/
-        └── framework/
-            └── system/
-```
+* Widget
+  * [libraries/Blog_widget.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/libraries/Blog_widget.php)
+  * [views/blog/list_latest.php](https://github.com/kenjis/codeigniter-widgets/blob/master/application/views/blog/list_latest.php)
 
 ## Requirements
 
@@ -28,97 +19,6 @@ codeigniter/
 * `composer` command (See [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx))
 * Git
 
-## How to Use
-
-### Install CodeIgniter
-
-```
-$ composer create-project kenjis/codeigniter-composer-installer codeigniter
-```
-
-Above command installs `public/.htaccess` to remove `index.php` in your URL. If you don't need it, please remove it.
-
-And it changes `application/config/config.php`:
-
-~~~
-$config['composer_autoload'] = FALSE;
-↓
-$config['composer_autoload'] = realpath(APPPATH . '../vendor/autoload.php');
-~~~
-
-~~~
-$config['index_page'] = 'index.php';
-↓
-$config['index_page'] = '';
-~~~
-
-#### Install Translations for System Messages
-
-If you want to install translations for system messages:
-
-```
-$ cd /path/to/codeigniter
-$ php bin/install.php translations 3.0.0
-```
-
-#### Install Third Party Libraries
-
-[Codeigniter Matches CLI](https://github.com/avenirer/codeigniter-matches-cli):
-
-```
-$ php bin/install.php matches-cli master
-```
-
-[CodeIgniter HMVC Modules](https://github.com/jenssegers/codeigniter-hmvc-modules):
-
-```
-$ php bin/install.php hmvc-modules master
-```
-
-[Modular Extensions - HMVC](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc):
-
-```
-$ php bin/install.php modular-extensions-hmvc codeigniter-3.x
-```
-
-[Ion Auth](https://github.com/benedmunds/CodeIgniter-Ion-Auth):
-
-```
-$ php bin/install.php ion-auth 2
-```
-
-[CodeIgniter3 Filename Checker](https://github.com/kenjis/codeigniter3-filename-checker):
-
-```
-$ php bin/install.php filename-checker master
-```
-
-### Run PHP built-in server (PHP 5.4 or later)
-
-```
-$ bin/server.sh
-```
-
-### Update CodeIgniter
-
-```
-$ cd /path/to/codeigniter
-$ composer update
-```
-
-You must update files manually if files in `application` folder or `index.php` change.
-
 ## Reference
 
-* [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
-* [Translations for CodeIgniter System](https://github.com/bcit-ci/codeigniter3-translations)
-
-## Related Projects for CodeIgniter 3.0
-
-* [Cli for CodeIgniter 3.0](https://github.com/kenjis/codeigniter-cli)
-* [CI PHPUnit Test](https://github.com/kenjis/ci-phpunit-test)
-* [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
-* [CodeIgniter Doctrine](https://github.com/kenjis/codeigniter-doctrine)
-* [CodeIgniter Deployer](https://github.com/kenjis/codeigniter-deployer)
-* [CodeIgniter3 Filename Checker](https://github.com/kenjis/codeigniter3-filename-checker)
+* <https://github.com/newmythmedia/bay>

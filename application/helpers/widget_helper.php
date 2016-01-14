@@ -1,4 +1,12 @@
 <?php
+/**
+ * Widget helper for CodeIgniter 3
+ *
+ * @author     Kenji Suzuki <https://github.com/kenjis>
+ * @license    MIT License
+ * @copyright  2016 Kenji Suzuki
+ * @link       https://github.com/kenjis/codeigniter-widgets
+ */
 
 function widget($library, $params = null, $cache_name = null, $cache_ttl = 0)
 {
