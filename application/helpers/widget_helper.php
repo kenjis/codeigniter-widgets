@@ -8,6 +8,16 @@
  * @link       https://github.com/kenjis/codeigniter-widgets
  */
 
+/**
+ * Widget helper
+ * 
+ * @staticvar Myth\Bay\Bay $bay
+ * @param string $library    Widget libray and method
+ * @param array  $params     Params for the method
+ * @param string $cache_name Cache name
+ * @param int    $cache_ttl  Time to live (in minutes)
+ * @return string
+ */
 function widget($library, $params = null, $cache_name = null, $cache_ttl = 0)
 {
 	static $bay;
