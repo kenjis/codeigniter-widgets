@@ -14,11 +14,11 @@
  * @staticvar Myth\Bay\Bay $bay
  * @param string $library    Widget library and method
  * @param array  $params     Params for the method
- * @param string $cache_name Cache name
  * @param int    $cache_ttl  Time to live (in minutes)
+ * @param string $cache_name Cache name
  * @return string
  */
-function widget($library, $params = null, $cache_name = null, $cache_ttl = 0)
+function widget($library, $params = null, $cache_ttl = 0, $cache_name = null)
 {
 	static $bay;
 
