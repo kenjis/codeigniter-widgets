@@ -15,7 +15,7 @@ This is CodeIgniter 3 with [myth:Bay](https://github.com/newmythmedia/bay) which
 
 ## Requirements
 
-* PHP 5.3.2 or later
+* PHP 5.4 or later
 * `composer` command (See [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx))
 * Git
 
